@@ -6,7 +6,7 @@ tamLata = int(input("Digite o tamanho da lata de tinta em litros: ")) # tamanho 
 valLata = float(input("Digite o valor da lata em reais: ")) # valor da lata em reais
 
 # qtdLatas = (tArea * cobTinta / tArea) / tamLata # quantidade de latas
-qtdLatas = math.ceil((cobTinta * tamLata) / tArea) 
+qtdLatas = math.ceil(tArea / (cobTinta * tamLata)) 
 valorTotal = qtdLatas * valLata # valor total em reais
 
 print("A quantidade de latas necessárias será de: " + str(qtdLatas) + " latas")
